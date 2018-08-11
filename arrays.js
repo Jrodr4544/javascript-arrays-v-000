@@ -25,6 +25,7 @@ var accessElementInArray = (array, index) => {
 }
 
 var destructivelyRemoveElementFromBeginningOfArray  = (array) => {
+<<<<<<< HEAD
   array.shift()       // remove element first
   return array     // return new array
 }
@@ -42,4 +43,13 @@ var destructivelyRemoveElementFromEndOfArray = (array) => {
 var removeElementFromEndOfArray = (array) => {
   // returns the array without the last element while keeping the original array with the same values
   return array.slice(0, array.length -1)
+=======
+  array.shift()
+  return array
+}
+
+var removeElementFromBeginningOfArray = (array) => {
+  var newArray = array.slice(0,array.length)
+  return newArray
+>>>>>>> 0bfb86189fbd7e7554576607fb2cdfef6ddc7962
 }
